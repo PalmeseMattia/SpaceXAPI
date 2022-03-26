@@ -1,3 +1,8 @@
+# SPACE X API PROJECT
+This is a personal project written in React using SpaceX public api.
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
