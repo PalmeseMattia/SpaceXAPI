@@ -21,7 +21,9 @@ export default function App(){
     <div className="card--container">
       {capsules.map(capsule => <CapsuleCard key = {capsule.id} 
                                             serial = {capsule.serial}
-                                            last_update = {capsule.last_update}/>)}
+                                            last_update = {capsule.last_update}
+                                            status = {capsule.status}
+                                            />)}
     </div>
   )
 }
