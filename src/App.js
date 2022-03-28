@@ -1,5 +1,6 @@
 import React from "react";
 import axios from "axios";
+import CapsuleCard from "./components/CapsuleCard";
 
 export default function App(){
 
@@ -16,8 +17,10 @@ export default function App(){
   });
 
   return(
-    <div>
-      {capsules.map(capsule => <p key={capsule.id}>{capsule.id}</p>)}
+    <div className="card--container">
+      {capsules.map(capsule => <CapsuleCard key = {capsule.id} 
+                                            serial = {capsule.serial}
+                                            last_update = {capsule.last_update}/>)}
     </div>
   )
 }
