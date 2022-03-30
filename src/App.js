@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import CapsuleCard from "./components/CapsuleCard";
+import Image from "./components/Image"
 
 export default function App(){
 
@@ -18,12 +19,16 @@ export default function App(){
 
 
   return(
-    <div className="card--container">
-      {capsules.map(capsule => <CapsuleCard key = {capsule.id} 
-                                            serial = {capsule.serial}
-                                            last_update = {capsule.last_update}
-                                            status = {capsule.status}
-                                            />)}
+    <div>
+      <Image/>
+      <h1>SPACE X CAPSULES </h1>
+      <div className="card--container">
+        {capsules.map(capsule => <CapsuleCard key = {capsule.id} 
+                                              serial = {capsule.serial}
+                                              last_update = {capsule.last_update}
+                                              status = {capsule.status}
+                                              />)}
+      </div>
     </div>
   )
 }
