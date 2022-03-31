@@ -55,7 +55,3 @@ h1{
   flex-direction: column; /* ADD */
   position: relative;
 }
-
-#active{
-  color: green;
-}
