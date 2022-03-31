@@ -21,7 +21,7 @@ export default function App(){
   return(
     <div>
       <Image/>
-      <h1>SPACE X CAPSULES </h1>
+      <h1>SPACE X CAPSULES 🚀</h1>
       <div className="card--container">
         {capsules.map(capsule => <CapsuleCard key = {capsule.id} 
                                               serial = {capsule.serial}
