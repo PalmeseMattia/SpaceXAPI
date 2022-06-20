@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import CapsuleCard from "./components/CapsuleCard";
-import Image from "./components/Image"
+import Img from "./components/Img"
+import { Container, Nav, Button } from "react-bootstrap";
 
 export default function App(){
 
@@ -19,9 +21,13 @@ export default function App(){
 
 
   return(
-    <div>
-      <Image/>
-      <h1>SPACE X CAPSULES 🚀</h1>
+    <Container>
+      <Nav>
+        <h1 className="text-start">🚀 SPACE X CAPSULES</h1>
+      </Nav>
+      <Img/>
+      <p className="fs-3 text-center">This website made in <a href="https://it.reactjs.org/">React</a> and Axios </p>
+      <h2 className="ms-auto">CAPSULES STATE :</h2>
       <div className="card--container">
         {capsules.map(capsule => <CapsuleCard key = {capsule.id} 
                                               serial = {capsule.serial}
@@ -29,6 +35,6 @@ export default function App(){
                                               status = {capsule.status}
                                               />)}
       </div>
-    </div>
+    </Container>
   )
 }

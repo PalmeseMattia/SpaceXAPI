@@ -1,4 +1,5 @@
 import React from "react"
+import { Card } from 'react-bootstrap'
 
 export default function CapsuleCard(props){
   console.log(props.status)
@@ -14,12 +15,14 @@ export default function CapsuleCard(props){
   //we render a card with capsule's infos
   const style = `card bg-${statuses[props.status]} mb-3 text-white` // this is an ES6 template literal
     return (
-      <div className={style}>
-        <div className="card-header">{props.status.toUpperCase()}</div>
-            <div className="card-body">
-              <h5 className="card-title">{props.serial}</h5>
-              <p className="card-text">{props.last_update}</p>
-            </div>
-      </div>
+      <Card className={style}>
+        <Card.Header>
+          {props.status.toUpperCase()}
+        </Card.Header>
+        <Card.Body>
+          <h5 className="card-title">{props.serial}</h5>
+          <p className="card-text">{props.last_update}</p>
+        </Card.Body>
+      </Card>
     )
 }
