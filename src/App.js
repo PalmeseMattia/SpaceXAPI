@@ -3,7 +3,7 @@ import axios from "axios";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import CapsuleCard from "./components/CapsuleCard";
 import Img from "./components/Img"
-import { Container, Nav, Button } from "react-bootstrap";
+import { Container, Nav} from "react-bootstrap";
 
 export default function App(){
 
