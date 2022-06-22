@@ -26,7 +26,7 @@ export default function App(){
         <h1 className="text-start">🚀 SPACE X CAPSULES</h1>
       </Nav>
       <Img/>
-      <p className="fs-3 text-center">This website made in <a href="https://it.reactjs.org/">React</a> and Axios </p>
+      <p className="fs-3 text-center">This website made in <a href="https://it.reactjs.org/">React</a> and <a href="https://axios-http.com/">Axios</a> let you visualize the current status of the dragon capsules </p>
       <h2 className="ms-auto">CAPSULES STATE :</h2>
       <div className="card--container">
         {capsules.map(capsule => <CapsuleCard key = {capsule.id} 
